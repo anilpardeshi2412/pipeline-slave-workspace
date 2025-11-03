@@ -17,8 +17,8 @@ pipeline {
 					}
 			
 					stage("stage-2"){
-				dir("/mnt/pipeline-1"){
-										steps{
+									steps{
+										dir("/mnt/pipeline-1"){
 												sh"mkdir stage-2"
 										
 										}
@@ -28,8 +28,9 @@ pipeline {
 				
 				}
 							stage("stage-3"){
-				dir("/mnt/pipeline-3"){
+				    
 										steps{
+										   dir("/mnt/pipeline-3"){
 												sh"mkdir stage-3"
 										
 										}
